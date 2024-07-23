@@ -40,7 +40,7 @@
     "prepublishOnly": "npm run build"
   },
   "keywords": [],
-  "author": "Luca-Sordetti",
+  "author": "Luca-Sordetti <contact@luca-sordetti.com>",
   "license": "MIT",
   "devDependencies": {
     "@adonisjs/assembler": "^7.7.0",
