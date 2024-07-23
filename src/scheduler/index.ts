@@ -88,12 +88,9 @@ export default class Scheduler {
     public async run(taskClasses: Array<typeof BaseTask> = []) {
         this.logger.info('Scanning tasks path %s', this.tasksPath)
 
-        this.logger.info('taskClasses', taskClasses.length)
-
         if (taskClasses.length === 0) {
             try {
                 const taskFiles = fs.readdirSync(this.tasksPath)
-                this.logger.info('taskFiles', taskFiles)
 
                 for (const file of taskFiles) {
                     const isAllowed =
